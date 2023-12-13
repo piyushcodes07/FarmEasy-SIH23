@@ -3,6 +3,8 @@
  * @see https://v0.dev/t/tKkzkd3yy1w
  */
 
+import NearbyWearhousesSection from "./nearbyWearhousesSection"
+
 
 export function HomePage() {
   return (
@@ -22,56 +24,7 @@ export function HomePage() {
       <div className="mt-4 p-4 bg-green-50">
         <h2 className="text-2xl font-bold text-orange-600">Storage facilities</h2>
         <p className="text-sm text-gray-600">Nearby warehouses,</p>
-        <div className="flex overflow-x-auto gap-4 mt-4">
-          <div className="min-w-[40%]">
-            <img
-              alt="Warehouse"
-              className="rounded-lg"
-              height="150"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "150/150",
-                objectFit: "cover",
-              }}
-              width="150"
-            />
-            <p className="text-sm mt-2 text-green-700">
-              40x50 sq.ft. <br /> $150/day
-            </p>
-          </div>
-          <div className="min-w-[40%]">
-            <img
-              alt="Warehouse"
-              className="rounded-lg"
-              height="150"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "150/150",
-                objectFit: "cover",
-              }}
-              width="150"
-            />
-            <p className="text-sm mt-2 text-green-700">
-              30x57 sq.ft. <br /> $120/day
-            </p>
-          </div>
-          <div className="min-w-[40%]">
-            <img
-              alt="Warehouse"
-              className="rounded-lg"
-              height="150"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "150/150",
-                objectFit: "cover",
-              }}
-              width="150"
-            />
-            <p className="text-sm mt-2 text-green-700">
-              100x50 sq.ft. <br /> $190/day
-            </p>
-          </div>
-        </div>
+     <NearbyWearhousesSection/>
       </div>
       <div className="flex justify-around items-center bg-green-200  p-4">
         <div className="text-center">

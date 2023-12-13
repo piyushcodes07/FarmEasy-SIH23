@@ -1,14 +1,19 @@
 "use client";
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+
 import {
   selectCity,
   selectLat,
   selectLng,
 } from "@/app/redux/slice/locationSlice";
+import NearbyWearhousesSection from "@/components/component/nearbyWearhousesSection";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
+
 const fetchData = async () => {
-  const lat = useSelector(selectLat);
+  const lat  = useSelector(selectLat);
   const long = useSelector(selectLng);
 
   let weather = await fetch(
@@ -23,17 +28,20 @@ const fetchData = async () => {
   return weather;
 };
 
-export default async function () {
-  const city = useSelector(selectCity);
-  const data = await fetchData();
-  console.log(data, "i am data");
+export default async function (props:any) {
+    console.log(props);
+    
+    const router = useRouter()
+//   const city = useSelector(selectCity);
+//   const data = await fetchData();
+//   console.log(data, "i am data");
 
   return (
     <div className="max-w-sm  mx-auto">
-      <div className="bg-green-200 p-4">
-        <div className="text-center">
+      {/* <div className="bg-green-200  p-4">
+        <div className="text-start">
           <h1 className="text-6xl font-bold text-orange-600">
-            {data.main.temp}
+            {data.main.temp+"°"}
           </h1>
           <p className="text-sm text-gray-700">{city}</p>
         </div>
@@ -52,91 +60,72 @@ export default async function () {
           </div>
           <SnowflakeIcon className="text-blue-200" />
         </div>
-      </div>
+      </div> */}
       <div className="mt-1 p-4 bg-green-50">
         <h2 className="text-2xl font-bold text-orange-600">
         भंडारण की सुविधाएं
         </h2>
         <p className="text-sm font-medium text-gray-600">आसपास के गोदाम,</p>
-        <div className="flex overflow-x-auto gap-4 mt-4">
-          <div className="min-w-[40%]">
-            <img
-              alt="Warehouse"
-              className="rounded-lg"
-              height="150"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "150/150",
-                objectFit: "cover",
-              }}
-              width="150"
-            />
-            <p className="text-sm mt-2 text-green-700">
-              40x50 sq.ft. <br /> $150/day
-            </p>
-          </div>
-          <div className="min-w-[40%]">
-            <img
-              alt="Warehouse"
-              className="rounded-lg"
-              height="150"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "150/150",
-                objectFit: "cover",
-              }}
-              width="150"
-            />
-            <p className="text-sm mt-2 text-green-700">
-              30x57 sq.ft. <br /> $120/day
-            </p>
-          </div>
-          <div className="min-w-[40%]">
-            <img
-              alt="Warehouse"
-              className="rounded-lg"
-              height="150"
-              src="/placeholder.svg"
-              style={{
-                aspectRatio: "150/150",
-                objectFit: "cover",
-              }}
-              width="150"
-            />
-            <p className="text-sm mt-2 text-green-700">
-              100x50 sq.ft. <br /> $190/day
-            </p>
-          </div>
-        </div>
+        <NearbyWearhousesSection/>
       </div>
-      <div className="flex justify-around items-center bg-green-200  p-4">
-        <div className="text-center">
+      <div style={{scrollbarWidth:"thin",scrollbarColor:"white",}} className="flex overflow-x-scroll gap-4 shadow-2xl bg-slate-100 mt-1">
+        <div onClick={() => router.push(`/city/${props.params.slug}/machineRenting`)} style={{background:"linear-gradient(145.06deg, #BCF7B7 12.99%, rgba(188, 200, 46, 0.364583) 37.83%, #035D2D 91.48%)"}} className="min-w-[40%] rounded-md text-center">
+         
+          <p className="text-sm mt-2 font-extrabold text-start ml-4 text-back">Machine<br></br> Renting</p>
           <img
             alt="Machine Renting"
             className="mx-auto"
-            height="64"
-            src="/placeholder.svg"
+            height="300"
+            src="/rent_figma.png"
             style={{
-              aspectRatio: "64/64",
+            //   aspectRatio: "100/100",
               objectFit: "cover",
             }}
-            width="64"
+            width="100"
           />
-          <p className="text-sm mt-2 text-orange-600">Machine Renting</p>
         </div>
-        <div className="text-center">
+        <div style={{background:"linear-gradient(138.78deg, #F8D06B 10.05%, rgba(200, 157, 46, 0.364583) 35.86%, #746906 91.62%)"}} className="min-w-[40%] text-center rounded-md">
+            <p className="text-sm mt-2 font-extrabold text-start ml-4 text-back">Direct Selling</p>
           <img
             alt="Direct Selling"
             className="mx-auto"
-            height="64"
-            src="/placeholder.svg"
+            height="300"
+            src="/direct_selling.png"
             style={{
-              aspectRatio: "64/64",
+            //   aspectRatio: "64/64",
               objectFit: "cover",
             }}
-            width="64"
+            width="120"
           />
-          <p className="text-sm mt-2 text-orange-600">Direct Selling</p>
+        </div>
+        <div style={{background:"linear-gradient(145.06deg, #F7B7ED 12.99%, rgba(200, 46, 194, 0.364583) 37.83%, #55035D 91.48%)"}} className=" min-w-[40%] rounded-md text-center">
+            <p className="text-sm mt-2 font-extrabold text-start ml-4 text-back">Land<br></br> Renting</p>
+          <img
+            alt="land renting"
+            className="mx-auto"
+            height="500"
+            src="/land renting.png"
+            style={{
+            //   aspectRatio: "64/64",
+              objectFit: "cover",
+
+            }}
+            width="300"
+          />
+        </div>
+        <div style={{background:"linear-gradient(139deg, #F8D06B 10.05%, rgba(200, 157, 46, 0.36) 35.86%, #746906 91.62%)"}} className="min-w-[40%] text-center rounded-md">
+            <p className="text-sm mt-2 font-extrabold text-start ml-4 text-back">Transport<br></br> Facilities</p>
+          <img
+            alt="Direct Selling"
+            className="mx-auto"
+            height="300"
+            src="/transport.png"
+            style={{
+            //   aspectRatio: "64/64",
+              objectFit: "cover",
+            }}
+            width="140"
+          />
         </div>
       </div>
     </div>
