@@ -3,17 +3,20 @@ import { useState } from "react";
 import MapboxAutocomplete from "react-mapbox-autocomplete";
 import { setCity,setLat,setLng } from "@/app/redux/slice/locationSlice";
 import { useDispatch } from "react-redux";
+import { useRouter } from 'next/navigation'
+ 
 
 
 export default function AutoComplete() {
   const dispatch = useDispatch();
+  const router = useRouter()
 
   const [cityLocation, setcityLocation] = useState({
     lat: 0,
     lng: 0,
   });
 
-  const suggestionSelect = (result: any, lat: any, lng: any, text: any) => {
+  const suggestionSelect = (result: any, lat: any, lng: any, text: string) => {
     console.log(result, lat, lng, text);
 
     setcityLocation({
@@ -24,7 +27,9 @@ export default function AutoComplete() {
     dispatch(setLat(lat))
     dispatch(setLng(lng))
 
-    
+    let link = text.toLowerCase()
+
+    router.push(`/city/${link}`,{scroll:false})
   };
 
   return (
