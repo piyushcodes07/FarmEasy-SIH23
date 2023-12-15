@@ -21,8 +21,8 @@ export default function NearbyWearhousesSection() {
           }}
           width="150"
         />
-        <p className="text-sm mt-2 text-green-700">
-          30x57 sq.ft. <br /> $120/day
+        <p className="text-sm mt-2 font-bold text-black">
+          30x57 sq.ft. <br /> <span className="text-green-500">$120/day</span>
         </p>
       </div>
       <div className="min-w-[40%]">
