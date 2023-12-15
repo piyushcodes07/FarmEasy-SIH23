@@ -23,6 +23,7 @@ export default function MachineRenting(props:{params:{slug:string}}) {
   dispatch(setFirstCity(props.params.slug))
   
   return (
+    <div className="max-w-sm  mx-auto">
     <div className="max-w-100vw mx-auto">
       <div className="bg-green-500 p-4 flex w-full items-center justify-between">
         <ChevronLeftIcon className="text-white" />
@@ -44,6 +45,7 @@ export default function MachineRenting(props:{params:{slug:string}}) {
 
       <Sprayers slug={props.params.slug}/>
       
+    </div>
     </div>
   );
 }

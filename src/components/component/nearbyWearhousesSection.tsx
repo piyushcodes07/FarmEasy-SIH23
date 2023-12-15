@@ -14,7 +14,7 @@ export default function NearbyWearhousesSection() {
           alt="Warehouse"
           className="rounded-lg"
           height="150"
-          src="/placeholder.svg"
+          src="https://img.directindustry.com/images_di/photo-g/197275-17109728.jpg"
           style={{
             aspectRatio: "150/150",
             objectFit: "cover",
@@ -30,7 +30,7 @@ export default function NearbyWearhousesSection() {
           alt="Warehouse"
           className="rounded-lg"
           height="150"
-          src="/placeholder.svg"
+          src="https://fallingrain.s3.amazonaws.com/uploads/9ea6da06538041d9a67b5ab196c7b30b/medium/cdv_photo_002.jpg"
           style={{
             aspectRatio: "150/150",
             objectFit: "cover",

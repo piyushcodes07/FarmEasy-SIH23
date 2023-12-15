@@ -32,13 +32,13 @@ export default async function (props:any) {
     console.log(props);
     
     const router = useRouter()
-//   const city = useSelector(selectCity);
-//   const data = await fetchData();
-//   console.log(data, "i am data");
+  const city = useSelector(selectCity);
+  const data = await fetchData();
+  console.log(data, "i am data");
 
   return (
     <div className="max-w-sm  mx-auto">
-      {/* <div className="bg-green-200  p-4">
+      <div className="bg-green-200  p-4">
         <div className="text-start">
           <h1 className="text-6xl font-bold text-orange-600">
             {data.main.temp+"°"}
@@ -60,12 +60,12 @@ export default async function (props:any) {
           </div>
           <SnowflakeIcon className="text-blue-200" />
         </div>
-      </div> */}
+      </div>
       <div className="mt-1 p-4 bg-green-50">
         <h2 className="text-2xl font-bold text-orange-600">
-        भंडारण की सुविधाएं
+        Nearby Wearhouses,
         </h2>
-        <p className="text-sm font-medium text-gray-600">आसपास के गोदाम,</p>
+        <p className="text-sm font-medium text-gray-600">Storage facilities</p>
         <NearbyWearhousesSection/>
       </div>
       <div style={{scrollbarWidth:"thin",scrollbarColor:"white",}} className="flex overflow-x-scroll gap-4 shadow-2xl bg-slate-100 mt-1">

@@ -5,7 +5,6 @@ import Link from "next/link";
 export default function Sprayer_card(data:any){
 
     const city = useSelector(selectCity) 
-    // console.log(data,"from plow card");
     const firstCity = useSelector(selectFirstCity)
     return(
         <Link href={`/city/${firstCity}/machineRenting/book?equipment=sprayer&id=${data.slug.id}`}>

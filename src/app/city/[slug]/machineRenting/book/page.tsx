@@ -36,6 +36,8 @@ export default function BookEquipment( props:{params:{slug:string}} ){
     }
     
     return(
+        <div className="max-w-sm  mx-auto">
         <FinalRentPage slug={data}/>
+        </div>
     )
 }

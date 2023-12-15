@@ -5,7 +5,7 @@ export default function Wearhouse(){
               alt="Warehouse"
               className="rounded-lg"
               height="150"
-              src="/placeholder.svg"
+              src="https://img.directindustry.com/images_di/photo-mg/197275-17109735.jpg"
               style={{
                 aspectRatio: "150/150",
                 objectFit: "cover",
