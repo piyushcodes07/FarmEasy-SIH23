@@ -8,12 +8,14 @@ export interface locationSlice {
   city:string,
   lat:string,
   lng:string,
+  firstCity:string
 }
 
 const initialState: locationSlice = {
   city:"",
   lat:"",
-  lng:""
+  lng:"",
+  firstCity:""
 }
 
 export const locationSlice = createSlice({
@@ -30,16 +32,21 @@ export const locationSlice = createSlice({
     },
     setLng:(state,action:PayloadAction<string>)=>{
         state.lng = action.payload
-    }
+    },
+    setFirstCity:(state,action:PayloadAction<string>)=>{
+      state.firstCity = action.payload
+  }
+    
   },
 })
 
 // Action creators are generated for each case reducer function
-export const {setCity,setLng,setLat} = locationSlice.actions
+export const {setCity,setLng,setLat,setFirstCity} = locationSlice.actions
 
 export const selectCity = (state: RootState) => state.location.city
 export const selectLat = (state: RootState) => state.location.lat
 export const selectLng = (state: RootState) => state.location.lng
+export const selectFirstCity = (state: RootState) => state.location.firstCity
 
 
 export default locationSlice.reducer

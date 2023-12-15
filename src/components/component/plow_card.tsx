@@ -1,11 +1,14 @@
 import { Card, CardContent } from "../ui/card";
 import { useSelector } from "react-redux";
-import { selectCity } from "@/app/redux/slice/locationSlice";
+import { selectCity, selectFirstCity } from "@/app/redux/slice/locationSlice";
+import Link from "next/link";
 export default function Plow_card(data:any){
     const city = useSelector(selectCity) 
     console.log(data,"from plow card");
+    const firstCity = useSelector(selectFirstCity)
     
     return(
+        <Link href={`/city/${firstCity}/machineRenting/book?equipment=plow&id=${data.slug.id}`}>
         <Card className="w-full rounded-md">
           <img
             alt="Plow"
@@ -25,5 +28,6 @@ export default function Plow_card(data:any){
             <p className="text-gray-500">{city}</p>
           </CardContent>
         </Card>
+        </Link>
     )
 }

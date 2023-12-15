@@ -5,6 +5,8 @@ import Tractors from "@/components/component/tractors";
 import { Input } from "@/components/ui/input";
 import dataBase from'../../../../../dummy_data.json' 
 import Sprayers from "@/components/component/sprayers";
+import { useDispatch } from "react-redux";
+import { setFirstCity } from "@/app/redux/slice/locationSlice";
 // import { collection } from "firebase/firestore";
 // import { useCollection } from "react-firebase-hooks/firestore";
 // import { initializeApp, applicationDefault, cert } from "firebase-admin/app";
@@ -17,6 +19,8 @@ import Sprayers from "@/components/component/sprayers";
 
 export default function MachineRenting(props:{params:{slug:string}}) {
   // console.log(props.params.slug,"from slug");
+  const dispatch = useDispatch()
+  dispatch(setFirstCity(props.params.slug))
   
   return (
     <div className="max-w-100vw mx-auto">
