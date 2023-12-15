@@ -1,52 +1,45 @@
 "use client";
-import { db } from "../../../../../firebase/clientApp";
+// import { db } from "../../../../../firebase/clientApp";
 import Plow from "@/components/component/plow";
 import Tractors from "@/components/component/tractors";
 import { Input } from "@/components/ui/input";
-import { collection } from "firebase/firestore";
-import { useCollection } from "react-firebase-hooks/firestore";
-import { initializeApp, applicationDefault, cert } from "firebase-admin/app";
-import {
-  getFirestore,
-  Timestamp,
-  FieldValue,
-  Filter,
-} from "firebase-admin/firestore";
+import dataBase from'../../../../../dummy_data.json' 
+import Sprayers from "@/components/component/sprayers";
+// import { collection } from "firebase/firestore";
+// import { useCollection } from "react-firebase-hooks/firestore";
+// import { initializeApp, applicationDefault, cert } from "firebase-admin/app";
+// import {
+//   getFirestore,
+//   Timestamp,
+//   FieldValue,
+//   Filter,
+// } from "firebase-admin/firestore";
 
-export default function MachineRenting() {
-
-    const collectionRef = collection(db,"storage");
-  // const [storage,loading,error] = useCollection(collection(db,"storage"))
-  // console.log(storage);
-  // const citiesRef = db.collection('storage');
-
-//   const serviceAccount = require("./");
-
-//   initializeApp({
-//     credential: cert(serviceAccount),
-//   });
-
-//   const db = getFirestore();
-
+export default function MachineRenting(props:{params:{slug:string}}) {
+  // console.log(props.params.slug,"from slug");
+  
   return (
     <div className="max-w-100vw mx-auto">
       <div className="bg-green-500 p-4 flex w-full items-center justify-between">
         <ChevronLeftIcon className="text-white" />
-        <h1 className="text-white text-lg font-semibold">खेती के उपकरण</h1>
+        <h1 className="text-white text-lg font-semibold">Farming Equipments</h1>
         <div className="w-6 h-6" />
       </div>
       <div className="relative mt-4">
         <Input className="pl-10" placeholder="Search" />
         <SearchIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500" />
       </div>
-      <h2 className="mt-6 mb-4 font-bold text-2xl ml-2 text-green-500">
-        {" "}
-        ट्रैक्टर
+      <h2 className="mt-6 mb-4 font-bold text-2xl ml-2 text-red-700">
+        Tractors
       </h2>
-      <Tractors />
-      <h2 className="mt-6 mb-4 font-bold text-2xl ml-2 text-green-500 "> हल</h2>
+      <Tractors slug={props.params.slug} />
+      <h2 className="mt-6 mb-4 font-bold text-2xl ml-2 text-red-700 "> Plows</h2>
 
-      <Plow />
+      <Plow slug={props.params.slug}/>
+      <h2 className="mt-6 mb-4 font-bold text-2xl ml-2 text-red-700 "> Sprayers</h2>
+
+      <Sprayers slug={props.params.slug}/>
+      
     </div>
   );
 }

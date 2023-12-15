@@ -1,0 +1,139 @@
+{
+    "id": 57,
+    "type": "plow",
+    "name": "Precision Plowing System",
+    "rate": "520",
+    "howOld": "3",
+    "description": "Precision Plowing System 3 years old, accurate and consistent plowing.",
+    "phone": "+91 9988776661",
+    "images": [
+      "https://example.com/plow_image19.jpg",
+      "https://example.com/plow_image20.jpg",
+      "https://example.com/plow_image21.jpg"
+    ]
+  },
+
+  {
+    "id": 58,
+    "type": "plow",
+    "name": "Durable Plow",
+    "rate": "490",
+    "howOld": "4",
+    "description": "Durable Plow 4 years old, built to withstand tough farming conditions.",
+    "phone": "+91 9988776662",
+    "images": [
+      "https://example.com/plow_image22.jpg",
+      "https://example.com/plow_image23.jpg",
+      "https://example.com/plow_image24.jpg"
+    ]
+  },
+
+  {
+    "id": 59,
+    "type": "plow",
+    "name": "Adjustable Depth Plow",
+    "rate": "430",
+    "howOld": "5",
+    "description": "Adjustable Depth Plow 5 years old, versatile for different soil depths.",
+    "phone": "+91 9988776663",
+    "images": [
+      "https://example.com/plow_image25.jpg",
+      "https://example.com/plow_image26.jpg",
+      "https://example.com/plow_image27.jpg"
+    ]
+  },
+
+  {
+    "id": 60,
+    "type": "plow",
+    "name": "Efficient Soil Turner",
+    "rate": "480",
+    "howOld": "1",
+    "description": "Efficient Soil Turner 1 year old, turns soil effectively for optimal farming.",
+    "phone": "+91 9988776664",
+    "images": [
+      "https://example.com/plow_image28.jpg",
+      "https://example.com/plow_image29.jpg",
+      "https://example.com/plow_image30.jpg"
+    ]
+  }
+
+
+
+
+
+
+  {
+    "id": 66,
+    "type": "sprayer",
+    "name": "Boom Sprayer",
+    "rate": "710",
+    "howOld": "2",
+    "description": "Boom Sprayer 2 years old, equipped with a boom for efficient large-scale spraying.",
+    "phone": "+91 9988776668",
+    "images": [
+      "https://example.com/sprayer_image16.jpg",
+      "https://example.com/sprayer_image17.jpg",
+      "https://example.com/sprayer_image18.jpg"
+    ]
+  },
+
+  {
+    "id": 67,
+    "type": "sprayer",
+    "name": "Precision Sprayer",
+    "rate": "890",
+    "howOld": "3",
+    "description": "Precision Sprayer 3 years old, features automated controls for precision spraying.",
+    "phone": "+91 9988776669",
+    "images": [
+      "https://example.com/sprayer_image19.jpg",
+      "https://example.com/sprayer_image20.jpg",
+      "https://example.com/sprayer_image21.jpg"
+    ]
+  },
+
+  {
+    "id": 68,
+    "type": "sprayer",
+    "name": "Agricultural Sprayer",
+    "rate": "840",
+    "howOld": "4",
+    "description": "Agricultural Sprayer 4 years old, built to withstand tough field conditions.",
+    "phone": "+91 9988776670",
+    "images": [
+      "https://example.com/sprayer_image22.jpg",
+      "https://example.com/sprayer_image23.jpg",
+      "https://example.com/sprayer_image24.jpg"
+    ]
+  },
+
+  {
+    "id": 69,
+    "type": "sprayer",
+    "name": "Orchard Sprayer",
+    "rate": "780",
+    "howOld": "5",
+    "description": "Orchard Sprayer 5 years old, designed for effective spraying in orchards.",
+    "phone": "+91 9988776671",
+    "images": [
+      "https://example.com/sprayer_image25.jpg",
+      "https://example.com/sprayer_image26.jpg",
+      "https://example.com/sprayer_image27.jpg"
+    ]
+  },
+
+  {
+    "id": 70,
+    "type": "sprayer",
+    "name": "Agricultural Sprayer",
+    "rate": "820",
+    "howOld": "1",
+    "description": "Agricultural Sprayer 1 year old, adjustable settings for different crops.",
+    "phone": "+91 9988776672",
+    "images": [
+      "https://example.com/sprayer_image28.jpg",
+      "https://example.com/sprayer_image29.jpg",
+      "https://example.com/sprayer_image30.jpg"
+    ]
+  }

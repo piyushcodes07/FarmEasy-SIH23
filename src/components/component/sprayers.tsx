@@ -1,7 +1,8 @@
 
-import Plow_card from "./plow_card";
+
 import dataBase from "../../../dummy_data.json";
-export default function Plow({ slug }: {slug:string }) {
+import Sprayer_card from "./sprayer_card";
+export default function Sprayers({ slug }: {slug:string }) {
   console.log(slug,"from plow");
   
   const data: any = dataBase[slug as keyof {}];
@@ -16,8 +17,8 @@ export default function Plow({ slug }: {slug:string }) {
 
   return (
     <div className="grid grid-cols-2 p-2 gap-4">
-      {data.machine_renting_plows.map((Element: any) => (
-        <Plow_card slug={Element} />
+      {data.machine_renting_sprayer.map((Element: any) => (
+        <Sprayer_card slug={Element} />
       ))}
     </div>
   );

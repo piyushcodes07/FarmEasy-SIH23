@@ -1,0 +1,262 @@
+{
+  "rajam": {
+    "storage": [],
+    "machine_renting_tractors": [
+      {
+        "id": 1,
+        "type": "tractor",
+        "name": "Mahindra Tractor",
+        "rate": "500",
+        "howOld": "3",
+        "description": "Mahindra tractor 3 year old, good condition and nice mileage.",
+        "phone": "+91 9970634781",
+        "images": [
+          "https://www.shutterstock.com/image-photo/indian-farmer-working-tractor-field-260nw-1874688958.jpg",
+          "https://media.istockphoto.com/id/1291337489/photo/indian-farmer-working-with-tractor-at-field.jpg?s=612x612&w=0&k=20&c=O5kySzhMarlfV1VlEW3LsrfJEafXs9mSK_W240zunwo=",
+          "https://upload.wikimedia.org/wikipedia/commons/8/88/Mahindra_Tractor%2C_India.jpg"
+        ]
+      },
+      {
+        "id": 2,
+        "type": "tractor",
+        "name": "John Deere Tractor",
+        "rate": "550",
+        "howOld": "2",
+        "description": "John Deere tractor 2 years old, excellent condition and great mileage.",
+        "phone": "+91 9876543210",
+        "images": [
+          "https://www.cnet.com/a/img/resize/5177d370cfc31e383c627c3b73c2eeeebee3a572/hub/2017/03/22/556bee37-d94c-4775-97b5-1b9b720bf2b5/john-deere-tractor-1.jpg?auto=webp&width=1200",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdlPZACyo_8QCtUTKQH3ac0GEEC3jQUWqARGiYRG_DKFM6GyVzMsPX180_ZPwqVLlgDHo&usqp=CAU",
+          "https://i.ytimg.com/vi/I_pvmAfkcyc/maxresdefault.jpg"
+        ]
+      },
+
+      {
+        "id": 3,
+        "type": "tractor",
+        "name": "Kubota Tractor",
+        "rate": "480",
+        "howOld": "4",
+        "description": "Kubota tractor 4 years old, well-maintained and fuel-efficient.",
+        "phone": "+91 1234567890",
+        "images": [
+          "https://assets.tractorjunction.com/tractor-junction/assets/images/upload/kubota-mu4501-2wd.webp?format=webp&width=1280&height=720",
+          "https://assets.tractorjunction.com/tractor-junction/assets/images/upload/neostar-b2441-4wd-1632223647.webp",
+          "https://i.ytimg.com/vi/_I5IfVkapZ8/maxresdefault.jpg"
+        ]
+      },
+      {
+        "id": 4,
+        "type": "tractor",
+        "name": "New Holland Tractor",
+        "rate": "600",
+        "howOld": "1",
+        "description": "New Holland tractor 1 year old, like new and efficient.",
+        "phone": "+91 1234567890",
+        "images": [
+          "https://i.ytimg.com/vi/mX3PPvbPEig/maxresdefault.jpg",
+          "https://i.ytimg.com/vi/mX3PPvbPEig/maxresdefault.jpg",
+          "https://i.pinimg.com/736x/fe/b0/e0/feb0e0739956d9c400ec96290639b215.jpg"
+        ]
+      },
+      {
+        "id": 5,
+        "type": "tractor",
+        "name": "Massey Ferguson Tractor",
+        "rate": "640",
+        "howOld": "4",
+        "description": "Massey Ferguson tractor 4 years old, good condition and nice mileage.",
+        "phone": "+91 9988776653",
+        "images": [
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5flfkvwzGyhBCYnUAPiVrt2o1hyGGCAK51e6ScI_WyxU1Rby_u0L8-LwS1RVNEl51mZs&usqp=CAU",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuEmoELn9mjoxmjVUZLC31OKpEhUdKGqm1zFkrUXpQxAdCMQugGXWBpm54rJWFOp_jkhY&usqp=CAU",
+          "https://i.pinimg.com/originals/fa/95/71/fa95718bf8d808b9953cbaff02cf4cc4.jpg"
+        ]
+      },
+
+      {
+        "id": 6,
+        "type": "tractor",
+        "name": "Case IH Tractor",
+        "rate": "650",
+        "howOld": "5",
+        "description": "Case IH tractor 5 years old, like new and efficient.",
+        "phone": "+91 9988776654",
+        "images": [
+          "https://i.pinimg.com/736x/6e/85/2f/6e852fedd648187d6e55826bc3ef4ea1.jpg",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUN9XiFfLGG-VWeuD3R376ApSXRC56deJzbqHAZ5H8LfVCDJZ8YWCm9nKF6FSgrU4Pzr4&usqp=CAU",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFNRUc2nwOVnVRi1SKecd6H0IQiIqHSzOXOahzw_GX3EH_hdFzoancyj0vQB5eHZdF4BM&usqp=CAU"
+        ]
+      }
+    ],
+    "machine_renting_plows": [
+      {
+        "id": 51,
+        "type": "plow",
+        "name": "Heavy Duty Plow",
+        "rate": "420",
+        "howOld": "2",
+        "description": "Heavy Duty plow 2 years old, robust construction and efficient.",
+        "phone": "+91 9876543202",
+        "images": [
+          "https://5.imimg.com/data5/SELLER/Default/2022/8/II/HS/CS/74922101/heavy-duty-agriculture-plough-500x500.jpg",
+          "https://5.imimg.com/data5/SELLER/Default/2021/4/DN/JR/EE/3784351/special-plough-5-tyne-500x500.JPG",
+          "https://img3.exportersindia.com/product_images/bc-full/dir_61/1816227/5-bottom-plough-for-black-soils-1745990.jpg"
+        ]
+      },
+
+      {
+        "id": 52,
+        "type": "plow",
+        "name": "Modern Plowing Machine",
+        "rate": "480",
+        "howOld": "3",
+        "description": "Modern Plowing Machine 3 years old, advanced technology for precise plowing.",
+        "phone": "+91 9876123453",
+        "images": [
+          "https://www.farming-machine.com/wp-content/uploads/2020/04/reversible-disc-plough.jpg",
+          "https://image.made-in-china.com/202f0j00wKjtnlkPEzrI/Single-Disc-Plough-for-Agriculture.webp",
+          "https://image.made-in-china.com/202f0j00ErtUTzQReaqo/All-Types-Best-Functions-of-The-Disc-Plough-with-Tractors-in-Disc-Plow.webp"
+        ]
+      },
+
+      {
+        "id": 53,
+        "type": "plow",
+        "name": "Economic Plow",
+        "rate": "350",
+        "howOld": "4",
+        "description": "Economic Plow 4 years old, cost-effective and reliable for small farms.",
+        "phone": "+91 9988776657",
+        "images": [
+          "https://www.farming-machine.com/wp-content/uploads/2020/04/1LY_SX__325.jpg",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJe0CWZX7haZJd019X6hqJHAJJ2BPeiTBbeql-iz8zUDRhV3aCPLeBfIrfucWVjHPMre8&usqp=CAU",
+          "https://image.made-in-china.com/43f34j00DyPVTLrcqWuG/Agriculture-Machinery-Equipment-Latest-Agricultural-Machine-One-Way-Heavy-Duty-Reversible-Disc-Plow-Plough.jpg"
+        ]
+      },
+
+      {
+        "id": 54,
+        "type": "plow",
+        "name": "Compact Plowing Unit",
+        "rate": "400",
+        "howOld": "5",
+        "description": "Compact Plowing Unit 5 years old, space-saving design with high efficiency.",
+        "phone": "+91 9988776658",
+        "images": [
+          "https://www.fieldking.com/images/tillage/plough/lg/mounted-disc-plough.png",
+          "https://www.fieldking.com/images/tillage/plough/lg/jumbo-fixed-mould-board-plough.png",
+          "https://www.fieldking.com/images/tillage/plough/lg/mounted-mould-board-plough.png"
+        ]
+      },
+
+      {
+        "id": 55,
+        "type": "plow",
+        "name": "Customizable Plow",
+        "rate": "380",
+        "howOld": "1",
+        "description": "Customizable Plow 1 year old, adjustable settings for various soil types.",
+        "phone": "+91 9988776659",
+        "images": [
+          "https://farmersreviewafrica.com/wp-content/uploads/2023/04/loren-king-bp4Kj6RMH9E-unsplash-002.jpg",
+          "https://i.pinimg.com/736x/a0/21/27/a02127ecc98fd3b5c6621a7efb4e2bf2.jpg",
+          "https://blog.machinefinder.com/wp-content/uploads/2014/05/494977_dbplanter_762x458.jpg"
+        ]
+      },
+
+      {
+        "id": 56,
+        "type": "plow",
+        "name": "High-Performance Plow",
+        "rate": "450",
+        "howOld": "2",
+        "description": "High-Performance Plow 2 years old, efficient and reliable for large fields.",
+        "phone": "+91 9988776660",
+        "images": [
+          "https://www.shutterstock.com/image-photo/prague-czech-republic-march-18-260nw-2142856725.jpg",
+          "https://c8.alamy.com/comp/2BK6RG0/pre-seeding-flattening-roller-tractor-working-in-a-field-aerial-image-2BK6RG0.jpg",
+          "https://c8.alamy.com/comp/2BK6RKJ/pre-seeding-flattening-roller-tractor-working-in-a-field-aerial-image-2BK6RKJ.jpg"
+        ]
+      }
+
+      
+    ],
+    "machine_renting_sprayer": [
+      {
+        "id": 61,
+        "type": "sprayer",
+        "name": "Crop Sprayer",
+        "rate": "750",
+        "howOld": "2",
+        "description": "Crop Sprayer 2 years old, covers large areas with precision spraying.",
+        "phone": "+91 9876543203",
+        "images": [
+          "https://5.imimg.com/data5/AI/SW/VH/SELLER-4733472/fertilizer-sprayer.jpg",
+          "https://5.imimg.com/data5/ANDROID/Default/2021/4/LY/CD/VN/4990525/product-jpeg-500x500.jpg",
+          "https://5.imimg.com/data5/JB/FY/IL/SELLER-86915862/2-in-1-battery-sprayer-500x500.jpg"
+        ]
+      },
+
+      {
+        "id": 62,
+        "type": "sprayer",
+        "name": "Orchard Sprayer",
+        "rate": "820",
+        "howOld": "3",
+        "description": "Orchard Sprayer 3 years old, designed for precise spraying in orchards.",
+        "phone": "+91 9876123454",
+        "images": [
+          "https://www.kisankraft.com/wp-content/uploads/2019/07/KK-ABOS-600-Orchard-Sprayer.jpg",
+          "https://www.kisankraft.com/wp-content/uploads/2020/09/KK-ABOS-0750.jpg",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjjhhv3a63b4aN59EPPIkN36wMiQVrwcKZ0vx7WraYQVxR0sNQz73Oq9dMH2QKV5wQObo&usqp=CAU"
+        ]
+      },
+
+      {
+        "id": 63,
+        "type": "sprayer",
+        "name": "Agricultural Sprayer",
+        "rate": "680",
+        "howOld": "4",
+        "description": "Agricultural Sprayer 4 years old, portable and efficient for small farms.",
+        "phone": "+91 9988776665",
+        "images": [
+          "https://cdn.moglix.com/p/ATTei9RuoTsgy.jpg",
+          "https://5.imimg.com/data5/PU/WH/MY-3348135/agricultural-sprayer-pump-500x500.png",
+          "https://www.indiantradebird.com/content/images/thumb/637889975150372662_agricultural-sprayer-pump-500x500.png"
+        ]
+      },
+
+      {
+        "id": 64,
+        "type": "sprayer",
+        "name": "Field Sprayer",
+        "rate": "700",
+        "howOld": "5",
+        "description": "Field Sprayer 5 years old, equipped with multiple nozzles for even coverage.",
+        "phone": "+91 9988776666",
+        "images": [
+          "https://www.agriculture.com/thmb/zo_y8LC7By4lYC9IkMazoL05DC4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hagie-sprayer-2-4903c336b50a4a43a66dc684da67db69.jpg",
+          "https://www.croplife.com/wp-content/uploads/2018/12/AGCO-sprayer.jpg",
+          "https://www.croplife.com/wp-content/uploads/2018/12/AGCO-sprayer.jpg"
+        ]
+      },
+
+      {
+        "id": 65,
+        "type": "sprayer",
+        "name": "Crop Duster",
+        "rate": "780",
+        "howOld": "1",
+        "description": "Crop Duster 1 year old, suitable for various crops with adjustable settings.",
+        "phone": "+91 9988776667",
+        "images": [
+          "https://mlhobevaucyf.i.optimole.com/w:1200/h:742/q:mauto/ig:avif/f:best/https://novo3ds.in/wp-content/uploads/2023/06/AG080_Manual_sparyer_application.jpg",
+          "https://krishibazaar.in/image/cache/catalog/blog%20image/dual-battery-sprayer-farmer-spraying-870x564.jpg",
+          "https://i.ytimg.com/vi/NvhZB-RWb3g/maxresdefault.jpg"
+        ]
+      }
+    ]
+  }
+}
