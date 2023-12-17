@@ -1,6 +1,98 @@
 {
   "rajam": {
-    "storage": [],
+    "storage": [{}],
+    "landRenting": [
+      {
+        "id": 71,
+        "name": "Farming Land in Pune, MH",
+        "rateInThousand": "6.2",
+        "areaInSqft": "8,700",
+        "description": "We offer fertile land for rent in Pune with optimal conditions for diverse crops.",
+        "phone": "+919876543210",
+        "mainImage": "https://example.com/land_image1.jpg"
+      },
+      {
+        "id": 72,
+        "name": "Agricultural Land in Nashik, MH",
+        "rateInThousand": "4.8",
+        "areaInSqft": "10,200",
+        "description": "Prime agricultural land available in Nashik with rich soil and easy access to transportation.",
+        "phone": "+919876123450",
+        "mainImage": "https://example.com/land_image2.jpg"
+      },
+      {
+        "id": 73,
+        "name": "Farming Plot in Aurangabad, MH",
+        "rateInThousand": "5.5",
+        "areaInSqft": "9,800",
+        "description": "A spacious farming plot in Aurangabad offering a great opportunity for agricultural activities.",
+        "phone": "+919988776655",
+        "mainImage": "https://example.com/land_image3.jpg"
+      },
+      {
+        "id": 74,
+        "name": "Agricultural Land in Kolhapur, MH",
+        "rateInThousand": "5.0",
+        "areaInSqft": "11,500",
+        "description": "Well-maintained agricultural land for rent in Kolhapur with ample water resources.",
+        "phone": "+919988877766",
+        "mainImage": "https://example.com/land_image4.jpg"
+      },
+      {
+        "id": 75,
+        "name": "Fertile Farmland in Solapur, MH",
+        "rateInThousand": "5.9",
+        "areaInSqft": "8,300",
+        "description": "Fertile farmland in Solapur available for cultivation, suitable for various crops.",
+        "phone": "+919988877667",
+        "mainImage": "https://example.com/land_image5.jpg"
+      },
+      {
+        "id": 76,
+        "name": "Agricultural Plot in Satara, MH",
+        "rateInThousand": "6.5",
+        "areaInSqft": "7,900",
+        "description": "Agricultural plot for lease in Satara with excellent soil quality and irrigation facilities.",
+        "phone": "+919988877668",
+        "mainImage": "https://example.com/land_image6.jpg"
+      },
+      {
+        "id": 77,
+        "name": "Farming Land in Amravati, MH",
+        "rateInThousand": "5.3",
+        "areaInSqft": "10,000",
+        "description": "Large farming land available for rent in Amravati, ideal for sustainable agriculture.",
+        "phone": "+919988877669",
+        "mainImage": "https://example.com/land_image7.jpg"
+      },
+      {
+        "id": 78,
+        "name": "Agricultural Estate in Chandrapur, MH",
+        "rateInThousand": "4.5",
+        "areaInSqft": "12,300",
+        "description": "Sprawling agricultural estate in Chandrapur, offering vast opportunities for farming.",
+        "phone": "+919988877670",
+        "mainImage": "https://example.com/land_image8.jpg"
+      },
+      {
+        "id": 79,
+        "name": "Farming Land in Latur, MH",
+        "rateInThousand": "5.4",
+        "areaInSqft": "9,200",
+        "description": "Farming land for rent in Latur with good connectivity and reliable water sources.",
+        "phone": "+919988877671",
+        "mainImage": "https://example.com/land_image9.jpg"
+      },
+      {
+        "id": 80,
+        "name": "Agricultural Plot in Jalgaon, MH",
+        "rateInThousand": "5.8",
+        "areaInSqft": "8,600",
+        "description": "Agricultural plot in Jalgaon available for lease, suitable for diverse farming practices.",
+        "phone": "+919988877672",
+        "mainImage": "https://example.com/land_image10.jpg"
+      }
+    ],
     "machine_renting_tractors": [
       {
         "id": 1,
@@ -179,8 +271,6 @@
           "https://c8.alamy.com/comp/2BK6RKJ/pre-seeding-flattening-roller-tractor-working-in-a-field-aerial-image-2BK6RKJ.jpg"
         ]
       }
-
-      
     ],
     "machine_renting_sprayer": [
       {

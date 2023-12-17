@@ -37,7 +37,7 @@ export default async function (props:any) {
   console.log(data, "i am data");
 
   return (
-    <div className="max-w-sm  mx-auto">
+    <div className="max-w-sm flex flex-col justify-between h-[80vh]  mx-auto">
       <div style={{backgroundImage: `url("https://images.unsplash.com/photo-1533460004989-cef01064af7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3JlZW4lMjBncmFzc3xlbnwwfHwwfHx8MA%3D%3D")` }} className="bg-green-200 cover bg-no-repeat p-4">
         <div className="text-start">
           <h1 className="text-6xl font-bold text-orange-600">
