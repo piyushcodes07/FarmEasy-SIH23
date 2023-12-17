@@ -7,9 +7,9 @@ export default function Home() {
   return (
 
     <div className="max-w-sm  mx-auto">
-      {/* <LandingLocation/> */}
-        <LandRentingSemiFinal/>
-      <LandRentingFinalPage/>
+      <LandingLocation/>
+        {/* <LandRentingSemiFinal/>
+      <LandRentingFinalPage/> */}
 
     </div>
   )

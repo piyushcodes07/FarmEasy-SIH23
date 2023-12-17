@@ -9,7 +9,7 @@
         "areaInSqft": "8,700",
         "description": "We offer fertile land for rent in Pune with optimal conditions for diverse crops.",
         "phone": "+919876543210",
-        "mainImage": "https://example.com/land_image1.jpg"
+        "mainImage": "https://apollo.olx.in/v1/files/li7iyvjp6omp1-IN/image"
       },
       {
         "id": 72,
@@ -18,7 +18,7 @@
         "areaInSqft": "10,200",
         "description": "Prime agricultural land available in Nashik with rich soil and easy access to transportation.",
         "phone": "+919876123450",
-        "mainImage": "https://example.com/land_image2.jpg"
+        "mainImage": "https://hanskumar.com/wp-content/uploads/2023/01/Agriculture-Land-For-Rent-or-Lease-In-Gurgaon-Near-Delhi-Jaipur-Highway-2.jpg"
       },
       {
         "id": 73,
@@ -27,7 +27,7 @@
         "areaInSqft": "9,800",
         "description": "A spacious farming plot in Aurangabad offering a great opportunity for agricultural activities.",
         "phone": "+919988776655",
-        "mainImage": "https://example.com/land_image3.jpg"
+        "mainImage": "https://hanskumar.com/wp-content/uploads/2021/02/Agriculture-Land-For-Sale-With-Frontage-On-Tar-Road-5Acres-Near-Bawal-Rewari-3.jpg"
       },
       {
         "id": 74,
@@ -36,7 +36,7 @@
         "areaInSqft": "11,500",
         "description": "Well-maintained agricultural land for rent in Kolhapur with ample water resources.",
         "phone": "+919988877766",
-        "mainImage": "https://example.com/land_image4.jpg"
+        "mainImage": "https://hanskumar.com/wp-content/uploads/2021/02/Agriculture-Land-For-Sale-With-Frontage-On-Tar-Road-5Acres-Near-Bawal-Rewari-8.jpg"
       },
       {
         "id": 75,
@@ -45,7 +45,7 @@
         "areaInSqft": "8,300",
         "description": "Fertile farmland in Solapur available for cultivation, suitable for various crops.",
         "phone": "+919988877667",
-        "mainImage": "https://example.com/land_image5.jpg"
+        "mainImage": "https://5.imimg.com/data5/SELLER/Default/2022/9/HD/QF/OK/6094383/farm-land-for-lease-500x500.jpg"
       },
       {
         "id": 76,
@@ -54,7 +54,7 @@
         "areaInSqft": "7,900",
         "description": "Agricultural plot for lease in Satara with excellent soil quality and irrigation facilities.",
         "phone": "+919988877668",
-        "mainImage": "https://example.com/land_image6.jpg"
+        "mainImage": "https://5.imimg.com/data5/SELLER/Default/2022/9/HW/NR/JJ/6094383/farm-land-for-lease.jpg"
       },
       {
         "id": 77,
@@ -63,7 +63,7 @@
         "areaInSqft": "10,000",
         "description": "Large farming land available for rent in Amravati, ideal for sustainable agriculture.",
         "phone": "+919988877669",
-        "mainImage": "https://example.com/land_image7.jpg"
+        "mainImage": "https://is1-2.housingcdn.com/01c16c28/1735f6fde4b92f94c916f2f0bbc5f0d8/v0/fs/agricultural_land-for-sale-shadnagar-Hyderabad-plot_view.jpg"
       },
       {
         "id": 78,
@@ -72,7 +72,7 @@
         "areaInSqft": "12,300",
         "description": "Sprawling agricultural estate in Chandrapur, offering vast opportunities for farming.",
         "phone": "+919988877670",
-        "mainImage": "https://example.com/land_image8.jpg"
+        "mainImage": "https://housing-images.n7net.in/01c16c28/0ae8e35bc8573b2fcd6261bc861e1246/v0/medium/agricultural_land-for-sale-ongole-Prakasam-plot_view.jpg"
       },
       {
         "id": 79,
@@ -81,17 +81,9 @@
         "areaInSqft": "9,200",
         "description": "Farming land for rent in Latur with good connectivity and reliable water sources.",
         "phone": "+919988877671",
-        "mainImage": "https://example.com/land_image9.jpg"
-      },
-      {
-        "id": 80,
-        "name": "Agricultural Plot in Jalgaon, MH",
-        "rateInThousand": "5.8",
-        "areaInSqft": "8,600",
-        "description": "Agricultural plot in Jalgaon available for lease, suitable for diverse farming practices.",
-        "phone": "+919988877672",
-        "mainImage": "https://example.com/land_image10.jpg"
+        "mainImage": "https://5.imimg.com/data5/SELLER/Default/2021/2/WX/WZ/HI/120331792/whatsapp-image-2020-12-16-at-10-07-28-am-500x500.jpeg"
       }
+      
     ],
     "machine_renting_tractors": [
       {

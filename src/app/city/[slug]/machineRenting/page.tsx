@@ -1,21 +1,11 @@
 "use client";
-// import { db } from "../../../../../firebase/clientApp";
 import Plow from "@/components/component/plow";
 import Tractors from "@/components/component/tractors";
 import { Input } from "@/components/ui/input";
-import dataBase from'../../../../../dummy_data.json' 
 import Sprayers from "@/components/component/sprayers";
 import { useDispatch } from "react-redux";
 import { setFirstCity } from "@/app/redux/slice/locationSlice";
-// import { collection } from "firebase/firestore";
-// import { useCollection } from "react-firebase-hooks/firestore";
-// import { initializeApp, applicationDefault, cert } from "firebase-admin/app";
-// import {
-//   getFirestore,
-//   Timestamp,
-//   FieldValue,
-//   Filter,
-// } from "firebase-admin/firestore";
+
 
 export default function MachineRenting(props:{params:{slug:string}}) {
   // console.log(props.params.slug,"from slug");
