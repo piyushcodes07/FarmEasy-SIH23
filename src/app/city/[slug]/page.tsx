@@ -1,6 +1,8 @@
 "use client";
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import dataBase from '../../../../dummy_data.json'
+
 
 import {
   selectCity,
@@ -29,7 +31,9 @@ const fetchData = async () => {
 };
 
 export default async function (props:any) {
-    console.log(props);
+  // let slug = props.params.slug
+  // const dataWearhouse: any = dataBase[slug as keyof {}];
+    // console.log(props,'from homePage');
     
     const router = useRouter()
   const city = useSelector(selectCity);
@@ -66,7 +70,7 @@ export default async function (props:any) {
         Nearby Wearhouses,
         </h2>
         <p className="text-sm font-medium text-gray-600">Storage facilities</p>
-        <NearbyWearhousesSection/>
+        <NearbyWearhousesSection slug={props.params.slug}/>
       </div>
       <div style={{scrollbarWidth:"thin",scrollbarColor:"white",}} className="flex overflow-x-scroll gap-4 shadow-2xl bg-slate-100 mt-1">
         <div onClick={() => router.push(`/city/${props.params.slug}/machineRenting`)} style={{background:"linear-gradient(145.06deg, #BCF7B7 12.99%, rgba(188, 200, 46, 0.364583) 37.83%, #035D2D 91.48%)"}} className="min-w-[40%] rounded-md text-center">

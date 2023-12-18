@@ -1,6 +1,105 @@
 {
   "rajam": {
-    "storage": [{}],
+    "storage": [{
+      "id": 81,
+      "name": "SecureStash India",
+      "price": "2.3",
+      "area": "2,000",
+      "booking": true,
+      "product": ["wheat","rice","apple","corn","jowar"],
+      "date":"" ,
+      "quantity": "",
+      "mainImage": "https://blog.forumias.com/wp-content/uploads/2018/09/article-2658473-1ECAF00100000578-437_634x375.jpg"
+    },
+    {
+      "id": 82,
+      "name": "CityVault Solutions",
+      "price":"4.5" ,
+      "area": "5,500",
+      "booking": false,
+      "product":["wheat","paddy","oranges","corn","sugarcane"] ,
+      "date": "",
+      "quantity": "",
+      "mainImage": "https://i0.wp.com/blog.bijak.in/wp-content/uploads/2022/03/Onion-Storage-Facilities-in-India-image.png?resize=1017%2C600&ssl=1"
+    },
+    {
+      "id": 83,
+      "name": "SafeHarbor Warehousing",
+      "price": "1.7",
+      "area": "11,222",
+      "booking": false,
+      "product": ["jowar","rice","corn","oranges","wheat"] ,
+      "date": "",
+      "quantity": "",
+      "mainImage": "https://agritimes.co.in/assets/images/india-has-8186-cold-storages-facilities-with-a-capacity-of-37-42-million-tonnes-english.jpeg"
+    },
+    {
+      "id": 84,
+      "name": "MetroGuard Storage",
+      "price": "7.6",
+      "area": "8,900",
+      "booking": true,
+      "product": ["wheat","rice","apple","corn","jowar"],
+      "date": "",
+      "quantity": "",
+      "mainImage": "https://5.imimg.com/data5/SELLER/Default/2023/2/YP/TA/RW/163764084/bulk-storage-facilities-service-500x500.jpeg"
+    },
+    {
+      "id": 85,
+      "name": "CapitalCrate Services",
+      "price": "5.5",
+      "area":"4,500" ,
+      "booking":true ,
+      "product": ["potato","onion","apple","corn","wheat"],
+      "date": "",
+      "quantity": "",
+      "mainImage": "https://5.imimg.com/data5/SELLER/Default/2023/2/YP/TA/RW/163764084/bulk-storage-facilities-service-500x500.jpeg"
+    },
+    {
+      "id": 86,
+      "name": "UrbanLocker Hub",
+      "price": "10.5",
+      "area": "13,500",
+      "booking": false,
+      "product": ["wheat","mango","apple","oranges","grapes"],
+      "date": "",
+      "quantity":"" ,
+      "mainImage": "https://bsmedia.business-standard.com/_media/bs/img/article/2022-04/17/full/1650219556-255.jpg"
+    },
+    {
+      "id": 87,
+      "name": "PrimeSafe Warehouses",
+      "price": "11.5" ,
+      "area": "8,7564",
+      "booking": false,
+      "product": ["onion","rice","apple","cauliflower","jowar"],
+      "date": "",
+      "quantity": "",
+      "mainImage": "https://www.livemint.com/rf/Image-621x414/LiveMint/Period1/2013/05/08/Photos/foodgrain--621x414.jpg"
+    },
+    {
+      "id": 88,
+      "name": "SecureNest Storage",
+      "price": "8.3",
+      "area": "8,760",
+      "booking": true,
+      "product":["wheat","apple","capsicum","corn","sugarcane"] ,
+      "date": "",
+      "quantity": "",
+      "mainImage": "https://dev-13sqft.s3.ap-south-1.amazonaws.com/blogs/161614033203.jpg"
+    },
+    {
+      "id": 89,
+      "name":"MegaGuard Depository",
+      "price": "1.1",
+      "area": "1,200",
+      "booking": true,
+      "product": ["sugarcane","potato","apple","corn","jowar"],
+      "date":"" ,
+      "quantity": "",
+      "mainImage": "https://englishtribuneimages.blob.core.windows.net/gallary-content/2023/10/2023_10$largeimg_2126317200.jpg"
+    }
+  ],
     "landRenting": [
       {
         "id": 71,
