@@ -13,6 +13,7 @@ export default function LandRentingCard({slug,props}:{slug:any,props:any}){
     return(
         <div>
               <div className="max-w-sm  mx-auto">
+              <Link className="text-green-600" href={`/city/${props}/landRenting/book?&id=${slug.id}`}> 
             <Card className="w-full">
           <CardContent>
             <img
@@ -30,7 +31,7 @@ export default function LandRentingCard({slug,props}:{slug:any,props:any}){
             <p className="text-green-500 text-lg font-semibold">₹ {slug.rateInThousand} K / month</p>
             <p className="text-gray-600">{slug.areaInSqft} sq.ft.</p>
             <div className="flex justify-between items-center mt-2">
-              <Link className="text-green-600" href={`/city/${firstCity}/landRenting/book?&id=${slug.id}`}> 
+              <Link className="text-green-600" href={`/city/${props}/landRenting/book?&id=${slug.id}`}> 
                 See More Details
               </Link>
               <Link className="text-green-600" href={`/city/${props}/landRenting/book?&id=${slug.id}`}> 
@@ -39,7 +40,7 @@ export default function LandRentingCard({slug,props}:{slug:any,props:any}){
             </div>
           </CardContent>
         </Card>
-        <Card className="w-full"></Card>
+        </Link>
         </div>
         </div>
     )

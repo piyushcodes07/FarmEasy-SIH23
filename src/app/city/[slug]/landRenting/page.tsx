@@ -1,6 +1,6 @@
 
 import Link from "next/link"
-import LandRentingCard from "./card"
+import LandRentingCard from "./card"  
 import dataBase from '../../../../../dummy_data.json'
 
 export default function LandRentingSemiFinal(props:{params:{slug:string}}) {

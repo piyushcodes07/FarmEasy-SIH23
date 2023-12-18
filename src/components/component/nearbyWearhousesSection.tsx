@@ -1,11 +1,6 @@
-
-
 import Wearhouse from "./wearhouse";
 
 export default function NearbyWearhousesSection() {
-    
-
-
   return (
     <div className="flex overflow-x-auto gap-4 mt-4">
       <Wearhouse />
@@ -21,9 +16,12 @@ export default function NearbyWearhousesSection() {
           }}
           width="150"
         />
-        <p className="text-sm mt-2 font-bold text-black">
-          30x57 sq.ft. <br /> <span className="text-green-500">$120/day</span>
-        </p>
+        <p className="block text-sm font-semibold mt-1">Spice Storage
+</p>
+        <span className="block text-green-500 text-sm font-semibold">
+          ₹ 430/day
+        </span>
+        <p className="text-sm mt-0 text-black text-[11px]">50x70 sq.ft.</p>
       </div>
       <div className="min-w-[40%]">
         <img
@@ -37,9 +35,11 @@ export default function NearbyWearhousesSection() {
           }}
           width="150"
         />
-        <p className="text-sm mt-2 text-green-700">
-          100x50 sq.ft. <br /> $190/day
-        </p>
+                  <p className="block text-sm font-semibold mt-1">Depot Rajam</p>
+            <span className="block text-green-500 text-sm font-semibold">₹ 520/day</span>
+            <p className="text-sm mt-0 text-black text-[11px]">
+            70x50 sq.ft. 
+            </p>
       </div>
     </div>
   );
