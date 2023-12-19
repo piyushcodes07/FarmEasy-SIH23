@@ -49,9 +49,9 @@ export default async function (props:{params:{slug:string}}) {
         Nearby Wearhouses,
         </h2>
         <p className="text-sm font-medium text-gray-600">Storage facilities</p>
-        <NearbyWearhousesSection slug="rajam"/>
+        <NearbyWearhousesSection slug={props.params.slug}/>
       </div>
-      <div style={{scrollbarWidth:"thin",scrollbarColor:"white",}} className="flex overflow-x-scroll gap-4 shadow-2xl bg-slate-100 mt-1">
+      <div style={{scrollbarWidth:"thin",scrollbarColor:"white",}} className="flex overflow-x-scroll gap-4 shadow-2xl bg-slate-100 p-2 mt-1">
         <Link href={`/city/${props.params.slug}/machineRenting`}  style={{background:"linear-gradient(145.06deg, #BCF7B7 12.99%, rgba(188, 200, 46, 0.364583) 37.83%, #035D2D 91.48%)"}} className="min-w-[40%] rounded-md text-center">
          
           <p className="text-sm mt-2 font-extrabold text-start ml-4 text-back">Machine<br></br> Renting</p>

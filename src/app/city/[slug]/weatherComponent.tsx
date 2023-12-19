@@ -38,23 +38,23 @@ export default function WeatherComponent(){
         // <div>hi</div>
         <div style={{backgroundImage: `url("https://images.unsplash.com/photo-1533460004989-cef01064af7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3JlZW4lMjBncmFzc3xlbnwwfHwwfHx8MA%3D%3D")` }} className="bg-green-200 cover bg-no-repeat p-4">
         <div className="text-start">
-          <h1 className="text-6xl font-bold text-orange-600">
+          <h1 className="text-6xl font-bold text-white">
             {weatherData.main.temp+"°"}
           </h1>
-          <p className="text-sm text-gray-700">{city}</p>
+          <p className="text-sm text-white">{city}</p>
         </div>
         <div className="flex justify-between items-center mt-4">
           <div>
-            <CloudSunIcon className="text-orange-500" />
-            <p>{weatherData.weather[0].description}</p>
+            <CloudSunIcon className="text-white" />
+            <p className="text-white">{weatherData.weather[0].description}</p>
           </div>
           <div>
-            <CloudRainIcon className="text-green-500" />
-            <p>{weatherData.clouds.all.toString() + "%"}</p>
+            <CloudRainIcon className="text-white" />
+            <p className="text-white">{weatherData.clouds.all.toString() + "%"}</p>
           </div>
           <div>
-            <WindIcon className="text-green-700" />
-            <p>{weatherData.wind.speed.toString() + " m/s"}</p>
+            <WindIcon className="text-white" />
+            <p className="text-white">{weatherData.wind.speed.toString() + " m/s"}</p>
           </div>
           <SnowflakeIcon className="text-blue-200" />
         </div>
