@@ -1,13 +1,13 @@
 "use client";
 import { useState } from "react";
 import MapboxAutocomplete from "react-mapbox-autocomplete";
-import { setCity,setLat,setLng } from "@/app/redux/slice/locationSlice";
+import { setCity,setLat,setLng, setWeatherDataRedux } from "@/app/redux/slice/locationSlice";
 import { useDispatch } from "react-redux";
 import { useRouter } from 'next/navigation'
  
 
 
-export default function AutoComplete() {
+export default  function  AutoComplete() {
   const dispatch = useDispatch();
   const router = useRouter()
 
@@ -16,7 +16,7 @@ export default function AutoComplete() {
     lng: 0,
   });
 
-  const suggestionSelect = (result: any, lat: any, lng: any, text: string) => {
+  const suggestionSelect = async (result: any, lat: any, lng: any, text: string) => {
     console.log(result, lat, lng, text);
 
     setcityLocation({
@@ -28,6 +28,11 @@ export default function AutoComplete() {
     dispatch(setLng(lng))
 
     let link = text.toLowerCase()
+
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${lng}&units=metric&APPID=df471ef10c63ddbe0c3555fe6d225432`;
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+    dispatch(setWeatherDataRedux(data))
 
     router.push(`/city/${link}`,{scroll:false})
   };

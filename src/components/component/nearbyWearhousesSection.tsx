@@ -1,3 +1,4 @@
+// 'use client'
 import Wearhouse from "./wearhouse";
 import dataBase from "../../../dummy_data.json";
 export default function NearbyWearhousesSection({ slug }: { slug: string }) {
