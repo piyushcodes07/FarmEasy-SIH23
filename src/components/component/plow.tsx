@@ -17,7 +17,7 @@ export default function Plow({ slug }: {slug:string }) {
   return (
     <div className="grid grid-cols-2 p-2 gap-4">
       {data.machine_renting_plows.map((Element: any) => (
-        <Plow_card slug={Element} />
+        <Plow_card key={Element.id} slug={Element} />
       ))}
     </div>
   );

@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import Sprayers from "@/components/component/sprayers";
 import { useDispatch } from "react-redux";
 import { setFirstCity } from "@/app/redux/slice/locationSlice";
-
+import Link from 'next/link'
 
 export default function MachineRenting(props:{params:{slug:string}}) {
   // console.log(props.params.slug,"from slug");
@@ -16,8 +16,11 @@ export default function MachineRenting(props:{params:{slug:string}}) {
     <div className="max-w-sm  mx-auto">
     <div className="max-w-100vw mx-auto">
       <div className="bg-green-500 p-4 flex w-full items-center justify-between">
-        <ChevronLeftIcon className="text-white" />
-        <h1 className="text-white text-lg font-semibold">Farming Equipments</h1>
+        <ChevronLeftIcon className="text-black" />
+        <h1 className="text-black text-lg font-semibold">Farming Equipments</h1>
+        <Link href={`/city/${props.params.slug}/machineRenting/sell`} className="bg-white text-green-500 font-semibold rounded py-2 px-3">
+          SELL
+        </Link>
         <div className="w-6 h-6" />
       </div>
       <div className="relative mt-4">

@@ -1,6 +1,5 @@
 "use client"
-import { selectCity, selectLat, selectLng, selectWeatherDataRedux } from "@/app/redux/slice/locationSlice";
-import { useEffect, useState } from "react";
+import { selectCity, selectWeatherDataRedux } from "@/app/redux/slice/locationSlice";
 import { useSelector } from "react-redux";
 
 export default function WeatherComponent(){
@@ -8,38 +7,13 @@ export default function WeatherComponent(){
     const city = useSelector(selectCity);
     const weatherData:any = useSelector(selectWeatherDataRedux)
     console.log(weatherData,"from weatherComponent");
-    
-    // const lat = useSelector(selectLat)
-    // const long = useSelector(selectLng)
-
-    // const [weatherData, setWeatherData] = useState<any>();
-
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //       try {
-    //         // const apiKey = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
-    //         const apiUrl = `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&APPID=df471ef10c63ddbe0c3555fe6d225432`;
-    //         const response = await fetch(apiUrl);
-    //         const data = await response.json();
-    //         setWeatherData(data);
-    //       } catch (error) {
-    //         console.error('Error fetching weather data:', error);
-    //       }
-    //     };
-    
-    //     fetchData();
-    //   }, []);
-    //   console.log(weatherData,"weather component");
-    //   console.log(weatherData.main.temp);
-      
 
     return(
 
-        // <div>hi</div>
         <div style={{backgroundImage: `url("https://images.unsplash.com/photo-1533460004989-cef01064af7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z3JlZW4lMjBncmFzc3xlbnwwfHwwfHx8MA%3D%3D")` }} className="bg-green-200 cover bg-no-repeat p-4">
         <div className="text-start">
           <h1 className="text-6xl font-bold text-white">
-            {weatherData.main.temp+"°"}
+            {Math.floor(weatherData.main.temp)+"°c"}
           </h1>
           <p className="text-sm text-white">{city}</p>
         </div>

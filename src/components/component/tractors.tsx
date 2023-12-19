@@ -21,7 +21,7 @@ export default function Tractors({slug}:{slug:string}) {
   
   return <div className=" grid grid-cols-2 overflow-x-auto p-2 gap-4">
     {data.machine_renting_tractors.map( (Element:any) =>(
-      <Tractor_card  slug={Element}/>
+      <Tractor_card key={Element.id}  slug={Element}/>
     ))}
   </div>;
 }

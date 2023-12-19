@@ -16,6 +16,7 @@ export default function Storage(props:{params:{slug:string}}){
 
     const final_obj = data.storage.find((element:any)=>element.id==id)
 
+
     return (
         <div key="1" className="max-w-md mx-auto bg-white rounded-lg shadow-md">
           <div className="flex items-center p-4 border-b bg-green-500 border-gray-200">

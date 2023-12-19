@@ -18,7 +18,7 @@ export default function Sprayers({ slug }: {slug:string }) {
   return (
     <div className="grid grid-cols-2 p-2 gap-4">
       {data.machine_renting_sprayer.map((Element: any) => (
-        <Sprayer_card slug={Element} />
+        <Sprayer_card key={Element.id} slug={Element} />
       ))}
     </div>
   );

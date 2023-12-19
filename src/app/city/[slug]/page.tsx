@@ -1,45 +1,11 @@
-// "use client";
+
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
-import dataBase from '../../../../dummy_data.json'
 
 
-import {
-  selectCity,
-  selectLat,
-  selectLng,
-} from "@/app/redux/slice/locationSlice";
 import NearbyWearhousesSection from "@/components/component/nearbyWearhousesSection";
-import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
 import WeatherComponent from './weatherComponent';
 
-
-// const fetchData = async () => {
-//   const lat  = useSelector(selectLat);
-//   const long = useSelector(selectLng);
-
-//   let weather = await fetch(
-//     `https://api.openweathermap.org/data/2.5/weather/?lat=${lat}&lon=${long}&units=metric&APPID=df471ef10c63ddbe0c3555fe6d225432`
-//   )
-//     .then((res) => res.json())
-//     .then((result) => {
-//       console.log(result);
-
-//       return result;
-//     });
-//   return weather;
-// };
-
 export default async function (props:{params:{slug:string}}) {
-  // let slug = props.params.slug
-  // const dataWearhouse: any = dataBase[slug as keyof {}];
-    // console.log(props,'from homePage');
-    
-    // const router = useRouter()
-
-  // const data = await fetchData();
-  // console.log(data, "i am data");
 
   return (
     <div className="max-w-[390px]   mx-auto">
@@ -61,7 +27,6 @@ export default async function (props:{params:{slug:string}}) {
             height="300"
             src="/rent_figma.png"
             style={{
-            //   aspectRatio: "100/100",
               objectFit: "cover",
             }}
             width="100"
@@ -75,7 +40,6 @@ export default async function (props:{params:{slug:string}}) {
             height="500"
             src="/land renting.png"
             style={{
-            //   aspectRatio: "64/64",
               objectFit: "cover",
 
             }}
@@ -90,7 +54,6 @@ export default async function (props:{params:{slug:string}}) {
             height="300"
             src="/direct_selling.png"
             style={{
-            //   aspectRatio: "64/64",
               objectFit: "cover",
             }}
             width="120"
@@ -105,7 +68,6 @@ export default async function (props:{params:{slug:string}}) {
             height="300"
             src="/transport.png"
             style={{
-            //   aspectRatio: "64/64",
               objectFit: "cover",
             }}
             width="140"
