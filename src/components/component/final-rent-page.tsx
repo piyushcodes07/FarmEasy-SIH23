@@ -3,6 +3,7 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
 import { Button } from "@/components/ui/button"
 import { useSelector } from "react-redux";
 import { selectCity } from "@/app/redux/slice/locationSlice";
+import Link from "next/link";
 export function FinalRentPage(data:any) {
   const city = useSelector(selectCity)
   console.log(data, "from final rent");
@@ -76,7 +77,9 @@ export function FinalRentPage(data:any) {
         </div>
       </div>
       <div className="px-4 py-4">
+        <Link href={`tel:${data.slug.phone}`}>
         <Button className="w-full bg-green-600 text-white">CALL NOW</Button>
+        </Link>
       </div>
     </div>
   )
