@@ -77,8 +77,9 @@ export function FinalRentPage(data:any) {
         </div>
       </div>
       <div className="px-4 py-4">
-        <a className="p-3" href={`tel:${data.slug.phone}`}>hii</a>
-        <Link href={`tel:7709283681`}>
+      <a className="p-3" href={`tel+:${data.slug.phone}`}>hii</a>
+
+        <Link href={`tel:+7709283681`}>
         <Button className="w-full bg-green-600 text-white">CALL NOW</Button>
         </Link>
       </div>
