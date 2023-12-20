@@ -12,7 +12,6 @@ import {
   onSnapshot,
   query,
   setDoc,
-  where,
 } from "firebase/firestore";
 import { useDispatch } from "react-redux";
 
@@ -126,14 +125,16 @@ export function SuperSupplyFirst() {
           <>
             <h1 className="text-center text-2xl font-bold mb-6">Select Crop</h1>
             <div className="grid grid-cols-2 gap-4">
-              {dataBase["crops"].map((crop) => {
+              {dataBase["crops"].map((crop, index) => {
                 return (
-                  <OrderListings
-                    name={crop.name}
-                    url={crop.url}
-                    selected={selected}
-                    setSelected={setSelected}
-                  />
+                  <div key={index}>
+                    <OrderListings
+                      name={crop.name}
+                      url={crop.url}
+                      selected={selected}
+                      setSelected={setSelected}
+                    />
+                  </div>
                 );
               })}
             </div>
@@ -237,9 +238,11 @@ export function SuperSupplyFirst() {
               </p>
             </div>
             <div className="flex flex-col gap-4 px-5 mt-5">
-              {orders.map((order) => {
+              {orders.map((order, index) => {
                 return (
-                  <ListingCard order={order} orderHistory={orderHistory} />
+                  <div key={index}>
+                    <ListingCard order={order} orderHistory={orderHistory} />
+                  </div>
                 );
               })}
             </div>
