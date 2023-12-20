@@ -164,7 +164,7 @@ export function SuperSupplyFirst() {
                     setSelected({ url: "", name: "" });
                   }}
                 >
-                  Change Crop
+                  Chnage Crop
                 </button>
               </div>
               <div className="mt-5 flex flex-col gap-3">
