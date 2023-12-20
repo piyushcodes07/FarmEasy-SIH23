@@ -8,7 +8,7 @@ export function SuperSupplyFirst() {
       <div className="bg-green-500 mb-3 text-white p-4 flex items-center justify-between">
         <ArrowLeftIcon onClick={()=>router.back()} className="text-white h-6 w-6" />
         <h1 className="text-xl font-bold">Super Supply</h1>
-        <MicroscopeIcon className="text-white h-6 w-6" />
+        {/* <MicroscopeIcon className="text-white h-6 w-6" /> */}
       </div>
       <h1 className="text-center text-2xl font-bold mb-6">Select Crop</h1>
       <div className="grid grid-cols-2 gap-4">
