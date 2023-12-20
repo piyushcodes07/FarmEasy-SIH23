@@ -10,8 +10,11 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { url } from "inspector";
-
+import { useRouter } from "next/navigation";
 export default function SellEquipment() {
+
+  const router = useRouter()
+
   function uploadToClient(e: any) {
     const i = e.target.files[0];
     console.log("image uploaded");
@@ -27,20 +30,19 @@ export default function SellEquipment() {
 
   return (
     <div className="max-w-sm mx-auto">
-      <div className="flex items-center bg-green-500 justify-between p-4 border-b">
-        <ArrowLeftIcon className="text-gray-600" />
+      <div className="flex items-center bg-green-500 justify-around p-4 border-b">
+        <ArrowLeftIcon onClick={()=>router.back()} className="text-gray-600" />
         <h1 className="text-lg font-semibold">Give Equipment For Rent</h1>
-        <MoreVerticalIcon className="text-gray-600" />
+        {/* <MoreVerticalIcon className="text-gray-600" /> */}
       </div>
       <div className="p-4">
-        {/* <h2 className="text-lg font-semibold mb-4">Broiler</h2> */}
 
         <input
-        
+          
           type="file"
           name="myImage"
           onChange={handleChange}
-          className="flex flex-col h-[70px]  items-center justify-center p-4 border-2 border-dashed rounded-lg mb-4"
+          className="flex flex-col h-[60px] w-[100%]  items-center justify-center p-4 border-2 border-dashed rounded-lg mb-4"
         />
         <img src={file} alt="" className="w-[100px] h-[100px]"/>
 

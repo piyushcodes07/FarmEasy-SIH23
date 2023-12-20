@@ -5,9 +5,10 @@ import { useSearchParams } from 'next/navigation'
 import { StorageRequest } from "@/components/component/storage-request";
 import { Button } from '@/components/ui/button';
 import dataBase from '../../../../../dummy_data.json'
-
+import { useRouter } from 'next/navigation';
 export default function Storage(props:{params:{slug:string}}){
 
+    const router = useRouter()
     const slug = props.params.slug
     var data: any = dataBase[slug as keyof {}];
     const searchParams = useSearchParams()
@@ -20,7 +21,7 @@ export default function Storage(props:{params:{slug:string}}){
     return (
         <div key="1" className="max-w-md mx-auto bg-white rounded-lg shadow-md">
           <div className="flex items-center p-4 border-b bg-green-500 border-gray-200">
-            <ArrowLeftIcon className="text-gray-600 mr-2" />
+            <ArrowLeftIcon onClick={()=>router.back()} className="text-gray-600 mr-2" />
             <h1 className="text-xl font-semibold">Storage Request</h1>
           </div>
           <div className="p-4">

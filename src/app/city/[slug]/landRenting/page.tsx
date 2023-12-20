@@ -1,11 +1,12 @@
 
-import Link from "next/link"
-import LandRentingCard from "./card"  
+"use client"
+import LandRentingCard from "./card"
 import dataBase from '../../../../../dummy_data.json'
+import { useRouter } from "next/navigation";
 
 export default function LandRentingSemiFinal(props:{params:{slug:string}}) {
 
-
+    const router = useRouter()
     const slug = props.params.slug;
     var data: any = dataBase[slug as keyof {}];
     
@@ -25,7 +26,7 @@ export default function LandRentingSemiFinal(props:{params:{slug:string}}) {
     
     <div className="max-w-sm mx-auto">
       <div className="bg-green-500 text-white p-4 flex items-center justify-between">
-        <ArrowLeftIcon className="text-white h-6 w-6" />
+        <ArrowLeftIcon onClick={()=>router.back()} className="text-white h-6 w-6" />
         <h1 className="text-xl font-bold">AgroRent Fields</h1>
         <MicroscopeIcon className="text-white h-6 w-6" />
       </div>

@@ -6,8 +6,10 @@ import Box from "@mui/material/Box";
 import Slider from "@mui/material/Slider";
 import { useSearchParams } from "next/navigation";
 import dataBase from '../../../../../../dummy_data.json'
+import { useRouter } from "next/navigation";
 
 export default function LandRentingFinalPage(props:{params:{slug:string}}) {
+  const router = useRouter()
   const searchParams = useSearchParams();
   const id = searchParams.get("id");
   
@@ -42,7 +44,7 @@ let rate: number = fianlObj.rateInThousand;
   return (
     <div className="max-w-sm mx-auto bg-white">
       <div className="flex items-center p-4 border-b bg-green-500 border-gray-200">
-        <ArrowLeftIcon className="text-gray-600 mr-2" />
+        <ArrowLeftIcon onClick={()=>router.back()} className="text-gray-600 mr-2" />
         <h1 className="text-lg font-semibold">AgroRent Fields</h1>
       </div>
       <div className="p-4">

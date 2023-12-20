@@ -1,17 +1,27 @@
-
+""
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
+import { ReactDOM } from "react";
 import { Button } from "@/components/ui/button"
 import { useSelector } from "react-redux";
 import { selectCity } from "@/app/redux/slice/locationSlice";
 import Link from "next/link";
+// import { useRouter } from "next/router";
+import { useRouter } from 'next/navigation'
 export function FinalRentPage(data:any) {
-  const city = useSelector(selectCity)
+
+
+
+  const router = useRouter()
+  const city = useSelector(selectCity);
   console.log(data, "from final rent");
+
   
   return (
     <div className="bg-white max-w-100vw mx-auto">
       <nav className="flex items-center justify-between px-4 py-2  bg-green-600 text-white">
+      <button onClick={() => router.back()}>
         <ChevronLeftIcon className="text-white" />
+        </button>
         <h1 className="text-lg font-semibold">{data.slug.name}</h1>
         <div />
       </nav>
@@ -77,10 +87,12 @@ export function FinalRentPage(data:any) {
         </div>
       </div>
       <div className="px-4 py-4">
-      <a className="p-3" href={`tel:+${data.slug.phone}`}>hii</a>
-
-        <Link href={`tel:+7709283681`}>
-        <Button className="w-full bg-green-600 text-white">CALL NOW</Button>
+      <a href="tel:1-847-555-5555">1-847-555-5555</a>
+      <a href="tel:18475555555">Click Here To Call Support 1-847-555-5555</a>
+      <a href="callto:1234567">Call 123-4567</a>
+        <Link href={`tel:+770928381`}>
+          
+          <Button onClick={() => router.back()} className="w-full  bg-green-600 text-white">CALL NOW</Button>
         </Link>
       </div>
     </div>
