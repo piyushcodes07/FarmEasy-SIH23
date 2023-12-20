@@ -87,9 +87,9 @@ export function FinalRentPage(data:any) {
         </div>
       </div>
       <div className="px-4 py-4">
-      <a href="tel:1-847-555-5555">1-847-555-5555</a>
+      {/* <a href="tel:1-847-555-5555">1-847-555-5555</a>
       <a href="tel:18475555555">Click Here To Call Support 1-847-555-5555</a>
-      <a href="callto:1234567">Call 123-4567</a>
+      <a href="callto:1234567">Call 123-4567</a> */}
         <Link href={`tel:+770928381`}>
           
           <Button onClick={() => router.back()} className="w-full  bg-green-600 text-white">CALL NOW</Button>
