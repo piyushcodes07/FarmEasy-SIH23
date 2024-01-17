@@ -92,7 +92,7 @@ export function FinalRentPage(data:any) {
       <a href="callto:1234567">Call 123-4567</a> */}
         <Link href={`tel:+770928381`}>
           
-          <Button onClick={() => router.back()} className="w-full  bg-green-600 text-white">CALL NOW</Button>
+          <Button  className="w-full  bg-green-600 text-white">CALL NOW</Button>
         </Link>
       </div>
     </div>
