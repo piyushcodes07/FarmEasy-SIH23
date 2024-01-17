@@ -5,7 +5,7 @@ import Link from 'next/link'
 import NearbyWearhousesSection from "@/components/component/nearbyWearhousesSection";
 import WeatherComponent from './weatherComponent';
 
-export default async function (props:{params:{slug:string}}) {
+export default async function Home(props:{params:{slug:string}}) {
 
   return (
     <div className="max-w-[390px]   mx-auto">
@@ -17,8 +17,8 @@ export default async function (props:{params:{slug:string}}) {
         <p className="text-sm font-medium text-gray-600">Storage facilities</p>
         <NearbyWearhousesSection slug={props.params.slug}/>
       </div>
-      <div style={{scrollbarWidth:"thin",scrollbarColor:"white",}} className="flex overflow-x-scroll gap-4 shadow-2xl bg-slate-100 p-2 mt-1">
-        <Link href={`/city/${props.params.slug}/machineRenting`}  style={{background:"linear-gradient(145.06deg, #BCF7B7 12.99%, rgba(188, 200, 46, 0.364583) 37.83%, #035D2D 91.48%)"}} className="min-w-[40%] rounded-md text-center">
+      <div style={{scrollbarWidth:"thin",scrollbarColor:"white",}} className="flex overflow-x-scroll gap-4 shadow-2xl max-h-48 bg-slate-100 p-2 mt-1">
+        <Link href={`/city/${props.params.slug}/machineRenting`}  style={{background:"linear-gradient(145.06deg, #BCF7B7 12.99%, rgba(188, 200, 46, 0.364583) 37.83%, #035D2D 91.48%)"}} className="min-w-[40%]  rounded-md text-center">
          
           <p className="text-sm mt-2 font-extrabold text-start ml-4 text-back">Machine<br></br> Renting</p>
           <img
@@ -53,11 +53,11 @@ export default async function (props:{params:{slug:string}}) {
             alt="Direct Selling"
             className="mx-auto"
             height="300"
-            src={`https://s3-alpha-sig.figma.com/img/604f/d3c7/35c3aa2ae94895fd82724be33828d228?Expires=1704067200&Signature=gGrU00ojgLb7vlGOt94g3QF68LHJOZGTXg4KAXw0WruQhc1OhpY2K0lOXHkcETaT~eTXeNI52uGH~P6-0IDVLiRfhpe0WPK0K9q3hHu3UHXTLxUKVWYXYA~UNJPS7Quif3xdeQxW4N9fbK3R2wM-qyMkIaRnWk3dadDaFOlKSlLjf~ReTV6Rr1uBZvI9XlQmFtBeftMWTbrFWz0~DIgURFb8V3D8KYSHW~efbcO9yin0LJgfFby6H8mqE456B-8GR0t0UF3FFzpiCtVOS-1ivC1wv3UF-OwBXOctJOZK1O76TseHZrCnldfxxigAB-46d6iTOiavizatpYL3hFfilQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4`}
+            src={`https://www.freeiconspng.com/uploads/vegetable-icon-png-29.png`}
             style={{
               objectFit: "cover",
             }}
-            width="140"
+            width="90"
           />
     
         </Link>
