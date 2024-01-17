@@ -100,18 +100,12 @@ export function SuperSupplyFirst() {
     }, 1000);
   };
   return (
-<<<<<<< HEAD
-    <div className="bg-white p-0">
-      <div className="bg-green-500 mb-3 text-white p-4 flex items-center justify-between">
-        <ArrowLeftIcon onClick={()=>router.back()} className="text-white h-6 w-6" />
-=======
     <div className="bg-white p-0 ">
       <div className="bg-green-500 mb-o text-white p-4 flex items-center justify-between">
         <ArrowLeftIcon
           onClick={() => router.back()}
           className="text-white h-6 w-6"
         />
->>>>>>> 24ea14ab510616ab9ddbe4615afad920af90c0be
         <h1 className="text-xl font-bold">Super Supply</h1>
         <button
           className="bg-white px-2 text-green-500 py-1 rounded-md"
